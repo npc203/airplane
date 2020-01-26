@@ -1,0 +1,10 @@
+I used keras model to train the dataset,
+
+here's the structure of the model:
+
+model.add(Dense(250, activation='relu', input_shape=(n_cols,)))
+model.add(Dense(250, activation='relu'))
+model.add(Dense(250, activation='relu'))
+model.add(Dense(4, activation='softmax'))
+
+used sklearn for scaling the dataset and labelBinarizer to encode Multi-class
