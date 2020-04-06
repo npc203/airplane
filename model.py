@@ -52,7 +52,7 @@ for dense_layer in dense_layers:
          #set early stopping monitor so the model stops training when it won't improve anymore
          #early_stopping_monitor = EarlyStopping(patience=3)
 
-         model.fit(train_X, train_y, validation_split=0.2, epochs=270, callbacks=[tensorboard])
+         model.fit(train_X, train_y, validation_split=0.2, epochs=500, callbacks=[tensorboard])
 
 
          pickle.dump(model,open(NAME+'.pickle',"wb"))
